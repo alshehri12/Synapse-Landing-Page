@@ -1,18 +1,34 @@
 # Synapse Landing Page
 
-A modern, responsive landing page for the Synapse collaborative innovation platform.
+<div align="center">
+  <img src="screenshots/landing-page-banner.png" alt="Synapse Landing Page Banner" width="100%">
+
+  <p align="center">
+    <strong>A modern, responsive landing page for the Synapse collaborative innovation platform</strong>
+  </p>
+
+  <p align="center">
+    <a href="https://alshehri12.github.io/Synapse-Landing-Page/">Live Demo</a> •
+    <a href="#features">Features</a> •
+    <a href="#quick-start">Quick Start</a> •
+    <a href="#deployment">Deployment</a>
+  </p>
+</div>
+
+---
 
 ## 📁 Project Structure
 
 ```
 Synapse-Landing-Page/
-├── index.html              # Main HTML file (rename from main.html)
+├── index.html              # Main HTML file
 ├── css/
 │   └── styles.css         # Custom CSS styles
 ├── js/
 │   └── script.js          # Custom JavaScript
-├── images/                # Local images (optional)
-├── AppImages/             # App screenshots
+├── screenshots/           # Landing page screenshots for README
+│   └── README.md          # Screenshot instructions
+├── AppImages/             # App screenshots (used in landing page)
 │   ├── Chatting.jpg
 │   ├── IdeasPage.jpg
 │   ├── ProfilePage.PNG
@@ -20,10 +36,11 @@ Synapse-Landing-Page/
 │   ├── ProjectManagmentPage2.jpg
 │   ├── SettingsPage.PNG
 │   └── loginPage.jpg
-├── example-site/          # Example/reference materials
 ├── README.md              # This file
 ├── SECURITY_REPORT.md     # Security assessment
-└── supabase-config.md     # Deployment guide
+├── PROJECT_STRUCTURE.md   # Detailed structure documentation
+├── DEPLOYMENT_CHECKLIST.md # Deployment guide
+└── supabase-config.md     # Supabase configuration
 ```
 
 ## 🚀 Quick Start
@@ -54,6 +71,22 @@ Synapse-Landing-Page/
    http://localhost:8000
    ```
 
+## 📸 Screenshots
+
+<div align="center">
+  <img src="screenshots/hero-section.png" alt="Hero Section" width="45%">
+  <img src="screenshots/features-section.png" alt="Features Section" width="45%">
+  <img src="screenshots/app-showcase.png" alt="App Screenshots" width="45%">
+  <img src="screenshots/mobile-view.png" alt="Mobile View" width="45%">
+</div>
+
+> **Note:** Add your screenshots to the `screenshots/` folder:
+> - `landing-page-banner.png` - Full page banner (1200x630px recommended)
+> - `hero-section.png` - Hero section screenshot
+> - `features-section.png` - Features showcase
+> - `app-showcase.png` - App screenshots display
+> - `mobile-view.png` - Mobile responsive view
+
 ## 🎨 Features
 
 - ✨ Modern, clean design with green/blue gradient theme
@@ -64,6 +97,7 @@ Synapse-Landing-Page/
 - 🎯 SEO optimized
 - 📊 Analytics ready
 - 🚀 Performance optimized
+- 📷 Real app screenshots integration
 
 ## 📦 Technologies Used
 
