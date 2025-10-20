@@ -1,0 +1,188 @@
+/*
+ * Synapse Landing Page Styles
+ * Author: Synapse Team
+ * Last Updated: October 2025
+ */
+
+/* ===========================
+   Global Styles
+   =========================== */
+
+* {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===========================
+   Gradient Backgrounds
+   =========================== */
+
+.gradient-bg {
+    background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================
+   Card Hover Effects
+   =========================== */
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+}
+
+/* ===========================
+   Button Styles
+   =========================== */
+
+.btn-primary {
+    background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+/* ===========================
+   Animations
+   =========================== */
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ===========================
+   Glass Effect
+   =========================== */
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===========================
+   Statistics Numbers
+   =========================== */
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* ===========================
+   Responsive Styles
+   =========================== */
+
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* ===========================
+   Smooth Scroll Behavior
+   =========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+   Accessibility Improvements
+   =========================== */
+
+/* Focus visible for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Improved text selection */
+::selection {
+    background-color: #10b981;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #10b981;
+    color: white;
+}
+
+/* ===========================
+   Performance Optimizations
+   =========================== */
+
+/* GPU acceleration for animations */
+.card-hover,
+.btn-primary,
+.animate-float {
+    will-change: transform;
+}
+
+/* Prevent layout shifts */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===========================
+   App Screenshots Styling
+   =========================== */
+
+/* Hero section app screenshot */
+.hero-screenshot {
+    box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.3);
+}
+
+/* Feature showcase screenshots */
+.feature-screenshot {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Smooth image loading */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Image optimization for mobile */
+@media (max-width: 640px) {
+    .feature-screenshot {
+        aspect-ratio: auto;
+    }
+}
