@@ -481,15 +481,15 @@ img {
 
 /* Logo in navigation */
 nav img[alt="Synapse Logo"] {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     object-fit: contain;
 }
 
 /* Logo in footer */
 footer img[alt="Synapse Logo"] {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     object-fit: contain;
     filter: brightness(1.2);
 }
@@ -498,7 +498,7 @@ footer img[alt="Synapse Logo"] {
 @media (max-width: 768px) {
     nav img[alt="Synapse Logo"],
     footer img[alt="Synapse Logo"] {
-        width: 52px;
-        height: 52px;
+        width: 72px;
+        height: 72px;
     }
 }
