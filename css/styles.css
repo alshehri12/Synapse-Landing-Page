@@ -481,28 +481,33 @@ img {
 
 /* Logo in navigation */
 nav img[alt="Synapse Logo"] {
-    width: 128px;
-    height: 128px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
 /* Logo in footer */
 footer img[alt="Synapse Logo"] {
-    width: 112px;
-    height: 112px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    filter: brightness(1.2);
+}
+
+/* Green color filter to match Synapse text gradient */
+.logo-green-filter {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(35%) saturate(650%) hue-rotate(125deg) brightness(95%) contrast(85%);
+}
+
+/* Footer logo with lighter green tint */
+footer .logo-green-filter {
+    filter: brightness(0) saturate(100%) invert(75%) sepia(25%) saturate(550%) hue-rotate(125deg) brightness(100%) contrast(90%);
 }
 
 /* Responsive logo sizing */
 @media (max-width: 768px) {
-    nav img[alt="Synapse Logo"] {
-        width: 80px;
-        height: 80px;
-    }
-
+    nav img[alt="Synapse Logo"],
     footer img[alt="Synapse Logo"] {
-        width: 72px;
-        height: 72px;
+        width: 56px;
+        height: 56px;
     }
 }
